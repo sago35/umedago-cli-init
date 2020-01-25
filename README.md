@@ -53,9 +53,10 @@ release用にBuildする際は、Changes.mdに該当Versionの記載が必要で
 
 ## License
 
-Copyright (c) 2020 sago35
-Released under the MIT license
-https://opensource.org/licenses/mit-license.php
+Copyright (c) 2020 sago35  
+Released under the MIT license  
+https://opensource.org/licenses/mit-license.php  
 
 ## Author
+
 sago35 - <sago35@gmail.com>
