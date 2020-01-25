@@ -27,7 +27,7 @@ type cli struct {
 // コマンドライン引数
 var (
 	app    = kingpin.New(appName, appDescription)
-	target = app.Arg("target", "target app name").String()
+	target = app.Arg("target", "target app name").Required().String()
 )
 
 // Run : main 関数にあたる本体
