@@ -8,7 +8,7 @@ import (
 )
 
 const (
-	appName        = "umedago-cli-init"
+	appName        = "{{.App}}"
 	appDescription = ""
 )
 
