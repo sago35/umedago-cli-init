@@ -5,11 +5,11 @@ import (
 	"os"
 )
 
-// VERSION : Tool version (ビルド時に指定する)
+// VERSION ...
 // 例1: go build -ldflags="-X main.VERSION=1.2.3"
 var VERSION string
 
-// BUILDDATE : Buildした時刻 (ビルド時に指定する)
+// BUILDDATE ...
 // 例2: go build -ldflags="-X "main.buildDate=2006/01/02 15:04:05 -0700 MST"
 var BUILDDATE string
 

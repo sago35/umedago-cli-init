@@ -17,16 +17,14 @@ type cli struct {
 	errStream io.Writer
 }
 
-// コマンドライン引数
 var (
 	app = kingpin.New(appName, appDescription)
 )
 
-// Run : main 関数にあたる本体
+// Run ...
 func (c *cli) Run(args []string) error {
 	app.UsageWriter(c.errStream)
 
-	// コマンドラインオプションの処理
 	if VERSION != "" {
 		app.Version(fmt.Sprintf("%s version %s build %s", appName, VERSION, BUILDDATE))
 	} else {
