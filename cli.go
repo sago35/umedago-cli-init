@@ -70,7 +70,7 @@ func umedagoCliInit(appName string) error {
 			target := filepath.Join(appName, path)
 			fmt.Println(path, `->`, target)
 
-			err := os.Mkdir(filepath.Dir(target), 0644)
+			err := os.Mkdir(filepath.Dir(target), 0777)
 			if err != nil && !os.IsExist(err) {
 				return err
 			}
