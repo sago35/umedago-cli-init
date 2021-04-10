@@ -7,6 +7,7 @@ import (
 	"os/exec"
 	"path/filepath"
 	"text/template"
+	"time"
 
 	"github.com/rakyll/statik/fs"
 	_ "github.com/sago35/umedago-cli-init/statik"
@@ -95,10 +96,14 @@ func umedagoCliInit(appName string) error {
 				return err
 			}
 
-			err = tmpl.Execute(w, struct{ App, User, Email string }{
+			err = tmpl.Execute(w, struct {
+				App, User, Email string
+				Year             int
+			}{
 				App:   appName,
 				User:  `sago35`,
 				Email: `sago35@gmail.com`,
+				Year:  time.Now().Year(),
 			})
 			if err != nil {
 				return err
