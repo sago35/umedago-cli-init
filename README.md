@@ -42,6 +42,11 @@ release用にBuildする際は、Changes.mdに該当Versionの記載が必要で
     (例) 開発用にv1.2.3でbuild
     $ go run dist/make_dist.go 1.2.3 --dev
 
+public 以下を更新したときは以下を実行してください。  
+実行には [statik](https://github.com/rakyll/statik) が必要です。  
+
+    $ go generate
+
 ### Environment
 
 * go
