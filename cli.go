@@ -9,10 +9,9 @@ import (
 	"text/template"
 	"time"
 
+	"github.com/alecthomas/kingpin/v2"
 	"github.com/rakyll/statik/fs"
 	_ "github.com/sago35/umedago-cli-init/statik"
-
-	"gopkg.in/alecthomas/kingpin.v2"
 )
 
 const (
